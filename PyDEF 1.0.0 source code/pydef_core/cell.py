@@ -197,11 +197,11 @@ class Cell:
                     proj_labels = [['$' + f + '$'] for f in self.atoms_types]
                     colors = self.dpp.colors_tot
 
-                    proj_dos_dict = dict(zip(self.atoms_types, proj_dos))
-                    proj_labels_dict = dict(zip(self.atoms_types, proj_labels))
+                proj_dos_dict = dict(zip(self.atoms_types, proj_dos))
+                proj_labels_dict = dict(zip(self.atoms_types, proj_labels))
 
-                    proj_dos = [proj_dos_dict[f] for f in self.dpp.choice_opas]
-                    proj_labels = [proj_labels_dict[f] for f in self.dpp.choice_opas]
+                proj_dos = [proj_dos_dict[f] for f in self.dpp.choice_opas]
+                proj_labels = [proj_labels_dict[f] for f in self.dpp.choice_opas]
 
             elif self.dpp.dos_type == 'OPA':
 
@@ -220,11 +220,11 @@ class Cell:
                     proj_labels = [['$' + f + '$'] for f in self.atoms]
                     colors = self.dpp.colors_tot
 
-                    proj_dos_dict = dict(zip(self.atoms, proj_dos))
-                    proj_labels_dict = dict(zip(self.atoms, proj_labels))
+                proj_dos_dict = dict(zip(self.atoms, proj_dos))
+                proj_labels_dict = dict(zip(self.atoms, proj_labels))
 
-                    proj_dos = [proj_dos_dict[f] for f in self.dpp.choice_opa]
-                    proj_labels = [proj_labels_dict[f] for f in self.dpp.choice_opa]
+                proj_dos = [proj_dos_dict[f] for f in self.dpp.choice_opa]
+                proj_labels = [proj_labels_dict[f] for f in self.dpp.choice_opa]
 
         # ----------------------------------------------- PLOT PARAMETERS ----------------------------------------------
 
